@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll | EduPlatform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="EduPlatform Logo" class="edu-logo">
+                <div class="logo">EduPlatform</div>
+            </div>            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="enrollment.html">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="enrollment-container">
+        <div class="enrollment-box">
+            <h2>Enroll in a Course</h2>
+            <p>Fill out the form below to secure your spot in one of our expert-led courses.</p>
+            
+            <div class="course-options">
+                <div class="course-card">
+                    <img src="python.jpg" alt="Python">
+                    <p>Python for Beginners</p>
+                </div>
+                <div class="course-card">
+                    <img src="web.jpg" alt="Web Development">
+                    <p>Web Development</p>
+                </div>
+                <div class="course-card">
+                    <img src="data.jpg" alt="Data Science">
+                    <p>Data Science Fundamentals</p>
+                </div>
+            </div>
+
+            <form id="enroll-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select>
+                    <option>Python for Beginners</option>
+                    <option>Web Development</option>
+                    <option>Data Science Fundamentals</option>
+                </select>
+                <button type="submit">Enroll Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Education Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

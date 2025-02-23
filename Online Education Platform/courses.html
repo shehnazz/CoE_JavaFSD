@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | EduPlatform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="EduPlatform Logo" class="edu-logo">
+                <div class="logo">EduPlatform</div>
+            </div>            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="enrollment.html">Enroll</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="center-content">
+        <h2>Available Courses</h2>
+        <input type="text" id="search" placeholder="Search courses..." onkeyup="searchCourses()">
+        
+        <div class="course-grid">
+            <div class="course-card">
+                <img src="python.jpg" alt="Python Course">
+                <p>Python for Beginners</p>
+            </div>
+            <div class="course-card">
+                <img src="web.jpg" alt="Web Development">
+                <p>Web Development</p>
+            </div>
+            <div class="course-card">
+                <img src="data.jpg" alt="Data Science">
+                <p>Data Science Fundamentals</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Education Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
