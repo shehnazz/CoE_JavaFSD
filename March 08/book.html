@@ -1,0 +1,31 @@
+<div data-sly-use.model="com.mytraining.core.models.BookListModel">
+    <div class="book-list">
+        <sly data-sly-list.book="${model.books}">
+            <div class="book-card">
+                <p>${book.title}</p>
+                <p>Author: ${book.author}</p>
+                <p>${book.description}</p>
+                <small>Published on: ${book.publishDate}</small>
+            </div>
+        </sly>
+    </div>
+    <button class="load-more">${model.loadMoreCta}</button>
+</div>
+
+<style>
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.book-card {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.book-card img {
+    width: 100%;
+    height: auto;
+}
+</style>
